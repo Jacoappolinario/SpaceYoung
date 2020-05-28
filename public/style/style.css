@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: white
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*=== Menu ===*/
+
+.menu-bg {
+    background: rgb(22,19,25);
+    background: linear-gradient(90deg, rgba(22,19,25,1) 0%, rgba(42,35,52,1) 100%);
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: #747178;
+}
+
+.menu-logo a {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: white;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    padding: 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu-nav a.active {
+    color: white;
+    font-weight: bold;
+}
+
+.menu-nav a:hover {
+    color: white;
+}
+
+.menu-nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.menu-nav a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+.introduction {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px auto;
+    width: 960px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30px;
+}
+
+.info__introduction {
+    margin-top: 117px;
+    margin-left: 60px;
+}
+
+.info__introduction h1 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+.info__introduction p {
+    width: 316px;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 70%;
+}
+
+.info__image {
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.accessed-content h1 {
+    width: 960px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    margin: 30px auto;
+}
+
+/*=== Cards ===*/
+
+.cards {
+    width: 960px;
+    margin: 20px auto;
+    
+    /* margin-top: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+}
+
+.card__image-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.card__title {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card__author {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+}
+
+/*=== Posts ===*/
+
+.posts {
+    margin-top: 30px;
+}
+
+/*=== About ===*/
+
+.about {
+    width: 960px;
+    margin: 30px auto;
+}
+
+.about h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 24px;
+}
+
+.about h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+}
+
+/*=== Footer ===*/
+
+.footer {
+    display: flex;
+    background: #E9E9E9;
+    height: 50px;
+    align-items: center;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    color: #595959;
+}
