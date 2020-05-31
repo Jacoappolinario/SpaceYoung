@@ -1,0 +1,26 @@
+{% extends "blog/layout.njk" %}
+
+{% block content %}
+<div class="posts__details">
+    <div class="details__image">
+        <img src="{{ post.image }}" alt="">
+    </div>
+
+    <div class="details__title">
+        <h1>{{ post.title }}</h1>
+    </div>
+
+    <div class="details__author">
+        <p>{{ post.author }}</p>
+    </div>
+</div>
+
+<div class="posts__text">
+
+    <p>{{ post.post }}</p>
+
+</div>
+
+
+{% endblock content %}
+

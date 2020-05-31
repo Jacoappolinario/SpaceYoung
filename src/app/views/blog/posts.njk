@@ -4,173 +4,21 @@
 
 <div class="posts">
 <section class="cards">
-    <div class="card">
+    {% for post in posts %}
+    <div class="card" id="{{ post.id }}">
         <div class="card__image-container">
-            <img src="/assets/image1.jpg" alt="">
+            <img src="{{ post.image }}" alt="">
         </div>
 
         <div class="card__title">
-            <p>De todo o coração</p>
+            <p>{{ post.title }}</p>
         </div>
 
         <div class="card__author">
-            <p>Lição Jovem</p>
+            <p>{{ post.author }}</p>
         </div>
     </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image2.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image3.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image4.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image5.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image6.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image1.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image2.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image3.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image4.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image5.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card__image-container">
-            <img src="/assets/image6.jpg" alt="">
-        </div>
-
-        <div class="card__title">
-            <p>De todo o coração</p>
-        </div>
-
-        <div class="card__author">
-            <p>Lição Jovem</p>
-        </div>
-    </div>
+    {% endfor %}
 </section>
 </div>
 
